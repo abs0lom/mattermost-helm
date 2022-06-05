@@ -43,6 +43,11 @@ service:
 
 ingress:
   enabled: false
+  traefikCRD:
+    enabled: false
+    entryPoints:
+    - web
+    matchOverride: ''
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
